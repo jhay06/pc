@@ -1,0 +1,27 @@
+.notif-modal {
+  padding: 58px 48px;
+}
+
+.notif-modal ion-icon {
+  font-size: 113px;
+  color: #FF6F6F;
+}
+
+.notif-modal h3 {
+  color: #004C73;
+  margin: 30px 0;
+}
+
+.notif-modal p {
+  color: #B0BAC9;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.notif-modal .action button {
+  width: 148px;
+}
+
+.notif-modal .action button:first-child {
+  margin-right: 10px;
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  clib-cms-web: &clib-cms-web
+    build: .
+    volumes:
+      - '.:/clib-cms-web'
+      - packages:/node_modules/
+    ports:
+      - 5000:5000
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    stdin_open: true
+
+volumes: 
+  packages:

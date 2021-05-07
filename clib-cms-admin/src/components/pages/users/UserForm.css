@@ -1,0 +1,12 @@
+.user-form {
+  padding: 45px 15px;
+}
+
+.user-form .action {
+  margin-top: 26px;
+}
+
+.user-form .action button {
+  margin-right: 10px;
+  width: 148px;
+}

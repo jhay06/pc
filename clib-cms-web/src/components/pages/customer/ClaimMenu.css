@@ -1,0 +1,16 @@
+.claim-menu {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.claim-menu a {
+  color: #D9D9D9;
+  width: 100%;
+  border-bottom: 1px solid #D9D9D9;
+  text-align: center;
+  text-decoration: none;
+}
+.claim-menu a:first-child {
+  margin-right: 2px;
+}

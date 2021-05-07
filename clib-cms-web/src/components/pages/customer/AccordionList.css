@@ -1,0 +1,141 @@
+.accordion {
+  position: relative;
+  margin-top: 8px;
+  border: 1px solid #eff2ff;
+  box-shadow: 0 10px 20px 0 rgba(46, 91, 255, 0.07);
+}
+
+.accordion:hover .card-header {
+  background: #f7f7f7;
+}
+
+.accordion .card,
+.accordion .card .card-header button {
+  border: none;
+}
+
+.card-header ion-icon:hover {
+  color: #004c73;
+}
+
+.accordion .dropdown button {
+  border: none;
+  background: none;
+  color: #e5e5e5;
+  font-size: 20px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.card-body {
+  border-top: 1px solid #eff2fe;
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-body .claim-menu a.active,
+.card-body .claim-menu a:hover {
+  color: #004c73;
+  border-bottom: 1px solid #004c73;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-body.claim,
+.card-body.coc {
+  border-top: none;
+}
+
+.accordion .card .card-header {
+  padding: 0;
+  border-bottom: 0;
+  background: #ffffff;
+}
+
+.card-header {
+  position: relative;
+}
+
+.card-head {
+  width: 100%;
+}
+
+.card-header ion-icon {
+  color: #e5e5e5;
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.card-header h6 {
+  color: #004c73;
+  margin-right: 10px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.card-header p {
+  color: #b0bac9;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.card-header label {
+  color: #22da00;
+  margin-bottom: 0px;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+.accordion .card .card-header button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 0px;
+}
+
+.accordion .card .card-header button:focus {
+  outline: none;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+  width: 50%;
+  text-align: center !important;
+  border: none !important;
+  color: #8798ad !important;
+  border-bottom: 1px solid #8798ad !important;
+}
+
+.single-tab-style {
+  width: 100% !important;
+  height: 64px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  font-weight: 700 !important;
+  border-color: none !important;
+  color: #004c73 !important;
+  border-bottom: 2px solid #004c73 !important;
+}
+
+.claim-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gen-menu-icon {
+  padding: 13px 0;
+  padding-left: 12px;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}

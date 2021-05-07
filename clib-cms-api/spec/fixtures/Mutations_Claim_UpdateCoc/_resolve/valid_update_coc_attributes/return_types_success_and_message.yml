@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://mno.cebuanalhuillier.com/NCVI/IMSAPI/1.0/InsuranceGateway
+    body:
+      encoding: UTF-8
+      string: '{"ApiKey":"873e38f22ada84d05a196406f33f4b0b","RequestType":38,"Request":"{\"ActionDone\":\"Update
+        Claims COCs\",\"ClaimsReferenceNo\":\"202012-00013\",\"COCs\":[\"000000000141\"],\"Claims\":{\"ClaimStatus\":\"Reported\"},\"EmployeeId\":\"000000\"}"}'
+    headers:
+      X-Api-Key:
+      - 2699b981-97f7-4fb3-a4c8-6ec24dc03e83
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJBcHBWZXJzaW9uIjoiMC4xLjAiLCJBcHBOYW1lIjoiQ0xJQiBDTVMiLCJBY2Nlc3NEYXRlIjoiMDEvMTEvMjAyMSAwNjozODozNSJ9.Q2pw4dJ8IlMNazpWNEDNcOGgZdX7Bsq_-Eo_piX8s64vYl9hgNCX8N2s0aDUGT45JZ_eWntf7Qot8Qalx964oWguXXM8R4cx2ON_umFnoPdhqQ5mL3uTdL6bWjmrXhkmLKuwKE8zREW-uJ7CroWoa12z_0_iKKysfyskp576yE8
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 11 Jan 2021 06:39:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ASP.NET_SessionId=i1qfugwo5frxsqqah0a35jff; path=/; HttpOnly
+      - __cfduid=d383358cfadff266ef6bf3859ec0d65ac1610347178; expires=Wed, 10-Feb-21
+        06:39:38 GMT; path=/; domain=.cebuanalhuillier.com; HttpOnly; SameSite=Lax;
+        Secure
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Cache-Control:
+      - private
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0791c5035600001a900caf2000000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 60fca44bbd461a90-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ResponseDate":"\/Date(1610347195550+0800)\/","Result":"{\"type\":\"Success\",\"message\":\"COCs
+        with Claims Updated.\",\"data\":\"202012-00013\",\"totalPage\":0}"}'
+  recorded_at: Mon, 11 Jan 2021 06:39:55 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,87 @@
+.loading-page {
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.loading-container {
+  background: #ffffff;
+  padding: 80px 30px;
+  border: 1px solid #eff2ff;
+  border-radius: 3px;
+  box-shadow: 0 10px 20px 0 rgba(46, 91, 255, 0.07);
+  width: 50%;
+}
+
+.loading-container .progress {
+  width: 100%;
+}
+
+.loading-container .progress-bar {
+  background: #042b44;
+}
+
+.loading-page img {
+  height: 68px;
+}
+
+.loading-page h5 {
+  color: #042b44;
+  margin-top: 14px;
+}
+
+.loading-page .loadbar {
+  overflow: hidden;
+  background: #f0f0f0;
+  width: 600px;
+  height: 10px;
+  position: relative;
+  border-radius: 50px;
+  margin: 20px 0;
+}
+
+.loading-page .spinner {
+  position: relative;
+  height: 68px;
+  width: 68px;
+  border-radius: 50%;
+  border: 10px solid #042b44;
+  animation: spin 800ms linear infinite;
+  margin-bottom: 40px;
+}
+
+.loading-page .spinner .breaker {
+  position: absolute;
+  background: #ffffff;
+  width: 21px;
+  height: 21px;
+  left: -10px;
+  transform: rotate(32deg);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

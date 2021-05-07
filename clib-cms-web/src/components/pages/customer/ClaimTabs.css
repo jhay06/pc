@@ -1,0 +1,29 @@
+.claim-tabs {
+  margin-bottom: 10px;
+}
+
+.claim-tabs a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #B0BAC9;
+  margin: 10px;
+  padding: 5px 25px;
+}
+
+.claim-tabs a:hover,
+.claim-tabs .-active {
+  text-decoration: none;
+  color: #004C73;
+  font-weight: bold;
+}
+
+.claim-tabs .action {
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.claim-tabs .action ion-icon {
+  margin-right: 10px;
+}

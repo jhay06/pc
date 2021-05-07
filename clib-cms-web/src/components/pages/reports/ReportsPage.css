@@ -1,0 +1,46 @@
+.label-title {
+  margin: 10px 0 10px 10px;
+}
+
+.label-side .label {
+  margin-right: 10px;
+  font-weight: 200;
+  color: #004c73;
+}
+
+.label-side .total {
+  color: #8798ad;
+  margin-top: 8px;
+}
+
+.search-input {
+  width: 300px;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e7ff;
+  color: #004c73;
+}
+
+.reports-title {
+  margin-bottom: 24px;
+}
+
+.generate-btn {
+  width: 200px;
+}
+
+.btn-icon {
+  margin-right: 16px;
+}
+
+a.generate-btn-container {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+a.generate-btn-container:hover {
+  text-decoration: none;
+  color: white;
+}

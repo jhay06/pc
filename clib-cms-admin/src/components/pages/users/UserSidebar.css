@@ -1,0 +1,55 @@
+.user-sidebar {
+  width: 370px;
+  padding: 23px 17px 10px 17px;
+  box-shadow: 0 10px 20px 0 rgba(46,91,255,0.07);
+  overflow-y: auto;
+}
+
+.user-sidebar .info {
+  border-bottom: 1px solid #E4E8F0;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.user-sidebar ion-icon {
+  font-size: 87px;
+  margin-bottom: 10px;
+  color: #99B7C7;
+}
+
+.user-sidebar h4 {
+  margin-bottom: 10px;
+  color: #004C73;
+}
+
+.user-sidebar .id {
+  margin-bottom: 10px;
+  color: #8798AD;
+}
+
+.actions {
+  width: 100%;
+}
+
+.actions button {
+  width: 100%;
+  font-size: 14px;
+}
+
+.actions .edit {
+  margin-right: 10px;
+}
+
+.user-sidebar label {
+  color: #B3CAD5;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: .04em;
+  font-weight: 500;
+}
+
+.user-sidebar p {
+  color: #004C73;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,14 @@
+.content-label {
+  margin-bottom: 20px;
+}
+
+.content-label label {
+  color: #b3cad5;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.content-label p {
+  color: #004c73;
+}

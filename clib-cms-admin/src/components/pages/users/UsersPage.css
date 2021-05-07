@@ -1,0 +1,27 @@
+.dashboard-container {
+  background: #ffffff;
+  overflow: hidden;
+  position: fixed;
+  top: 65px;
+  left: 215px;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 0px 10px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.search-input {
+  width: 300px;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #E0E7FF;
+  color: #004c73;
+}

@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:3.6.17-xenial
+    volumes:
+      - mongodb_data:/data/db
+    command: mongod --smallfiles --quiet
+    restart: always
+    ports:
+      - 27017:27017
+
+  clib-cms-api: &clib-cms-api
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/clib-cms-api
+      - bundler_gems:/usr/local/bundle/
+      - cache:/cache
+    ports:
+      - 3000:3000
+    depends_on:
+      - mongodb
+
+volumes:
+  mongodb_data:
+  bundler_gems:
+  cache:

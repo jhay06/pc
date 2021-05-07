@@ -1,0 +1,41 @@
+.modal-body {
+  border: 1px solid #EFF2FF;
+  border-radius: 3px;
+  box-shadow: 0 10px 20px 0 rgba(46,91,255,0.07);
+}
+
+.notif-modal {
+  padding: 60px 135px;
+}
+
+.notif-modal ion-icon {
+  font-size: 113px;
+  color: #004C73;
+}
+
+.notif-modal.-report ion-icon {
+  color: #004C73;
+}
+
+.notif-modal.-delete ion-icon {
+  color: #FF6F6F;
+}
+
+.notif-modal h5 {
+  color: #004C73;
+  margin: 30px 0;
+}
+
+.notif-modal .-delete {
+  font-size: 50px;
+}
+
+.notif-modal p {
+  color: #B0BAC9;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.notif-modal .action button:first-child {
+  margin-right: 10px;
+}

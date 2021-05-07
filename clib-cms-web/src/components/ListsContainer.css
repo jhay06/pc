@@ -1,0 +1,90 @@
+.lists-container {
+  padding: 20px 0px 0px 5px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.table-container {
+  max-width: 100%;
+  min-width: 900px;
+  table-layout: fixed;
+  overflow-x: auto;
+}
+
+.customer-label th {
+  color: #b3cad5;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  padding: 15px;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+.customer-label th:hover {
+  color: #004c73;
+}
+
+.customer-infos {
+  border-top: 1px solid #f4f6ff;
+}
+
+.customer-infos:hover {
+  background: #f5f5f5;
+}
+
+.customer-infos a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.customer-infos td {
+  padding: 15px;
+  color: #004c73;
+}
+
+.pagination-tabs {
+  padding: 40px;
+  margin-left: 15px;
+}
+
+.loading-spinner {
+  text-align: center;
+  margin-top: 56px;
+}
+
+.table-wrapper {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+th.firstName {
+  width: 30%;
+}
+th.insuranceCustomerNo {
+  width: 18%;
+}
+th.dateOfBirth {
+  width: 13%;
+}
+th.address {
+  width: 40%;
+}
+
+th.selected-columnSort {
+  font-weight: bold;
+  color: #004c73;
+}
+
+.overview-loader {
+  margin: 30px auto 30px;
+  text-align: center;
+}
+
+.overview-pagination {
+  margin: 50px 0 40px 30px;
+}

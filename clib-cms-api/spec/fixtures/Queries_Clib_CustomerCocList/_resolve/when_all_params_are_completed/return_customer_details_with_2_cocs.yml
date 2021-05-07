@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://mno.cebuanalhuillier.com/NCVI/IMSAPI/1.0/InsuranceGateway
+    body:
+      encoding: UTF-8
+      string: '{"ApiKey":"873e38f22ada84d05a196406f33f4b0b","RequestType":33,"Request":"{\"Limit\":2,\"Page\":1,\"CustomerNo\":\"I00000000131\"}"}'
+    headers:
+      X-Api-Key:
+      - 2699b981-97f7-4fb3-a4c8-6ec24dc03e83
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJBcHBWZXJzaW9uIjoiMC4xLjAiLCJBcHBOYW1lIjoiQ0xJQiBDTVMiLCJBY2Nlc3NEYXRlIjoiMTEvMjUvMjAyMCAwMTozMTozMiJ9.WgLvcwoWckGwJVP5OakG3g4DZjT_wwbn6PB4nqbLbh72ZnH9_LJwRBe24e422YZ4Oyr2erJQF8bmc5JinAQg8k5rnQPEaw7NzY1hmLuck6PFw2jKOXG2tMvKpuvPbm940JbG-8UwRP7fau5CitgFRWoZnDo4HxhB8ZExE9fAtIE
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Nov 2020 01:31:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ASP.NET_SessionId=c13rfqthec3vlpl2c5h40yku; path=/; HttpOnly
+      - __cfduid=dc7ef02ffa718cb705296b81468aa88771606267898; expires=Fri, 25-Dec-20
+        01:31:38 GMT; path=/; domain=.cebuanalhuillier.com; HttpOnly; SameSite=Lax;
+        Secure
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Cache-Control:
+      - private
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '069ea0238700001908a2a1b000000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5f779c7f3b7f1908-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ResponseDate":"\/Date(1606267904036+0800)\/","Result":"{\"type\":\"Success\",\"message\":\"Got
+        data\",\"data\":{\"CustomerDetails\":{\"InsuranceCustomerNo\":\"I00000000131\",\"FirstName\":\"November\",\"MiddleName\":\"FWC\",\"LastName\":\"Nine\",\"DateOfBirth\":\"1996-10-16T00:00:00\",\"PlaceOfBirth\":\"Makati\",\"Gender\":\"F\",\"ValidIDPresented\":\"Student
+        ID\",\"ValidIDNumber\":\"181304\",\"MobileNumber\":\"09123456780\",\"Landline\":\"12345678\",\"EmailAddress\":\"kodzuken%-+@domain.com\",\"Address\":\"Makati\",\"Nationality\":\"Filipino\",\"CivilStatus\":\"Single\",\"SourceOfFunds\":\"Commissions\",\"NatureOfWork\":\"Advertising\"},\"COCDetailCollection\":[{\"COCNumber\":\"000000000183\",\"EffectiveDate\":\"11\/6\/2020
+        12:00:00 PM\",\"TerminationDate\":\"12\/5\/2020 11:59:00 PM\",\"IssueDate\":\"11\/5\/2020
+        1:51:02 PM\",\"ReferenceNumber\":\"FWCUAT007\",\"CategoryCode\":\"IPI\",\"ProductCode\":\"CLPAB\",\"ProviderCode\":\"MICO\",\"PartnerCode\":\"PJ1\",\"PlatformName\":\"FWC
+        Mobile App\",\"Address\":\"Makati\",\"BeneficiaryName\":\"FWCTest\",\"BeneficiaryRelationship\":\"Beneficiary\",\"BeneficiaryBirthday\":\"0001-01-01T00:00:00\",\"GuardianBirthday\":\"0001-01-01T00:00:00\",\"IsPaid\":true,\"IsActive\":true},{\"COCNumber\":\"000000000183\",\"EffectiveDate\":\"11\/6\/2020
+        12:00:00 PM\",\"TerminationDate\":\"12\/5\/2020 11:59:00 PM\",\"IssueDate\":\"11\/5\/2020
+        1:51:02 PM\",\"ReferenceNumber\":\"FWCUAT007\",\"CategoryCode\":\"IPI\",\"ProductCode\":\"CLPAB\",\"ProviderCode\":\"MICO\",\"PartnerCode\":\"PJ1\",\"PlatformName\":\"FWC
+        Mobile App\",\"Address\":\"Makati\",\"BeneficiaryName\":\"FWCTest\",\"BeneficiaryRelationship\":\"Beneficiary\",\"BeneficiaryBirthday\":\"0001-01-01T00:00:00\",\"GuardianBirthday\":\"0001-01-01T00:00:00\",\"IsPaid\":true,\"IsActive\":true}]},\"totalPage\":1}"}'
+  recorded_at: Wed, 25 Nov 2020 01:31:44 GMT
+recorded_with: VCR 6.0.0

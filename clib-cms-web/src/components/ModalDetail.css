@@ -1,0 +1,47 @@
+.modal-details {
+  padding: 10px 15px 30px 15px;
+}
+
+.modal-details .heading {
+  margin-bottom: 30px;
+}
+
+.modal-details .heading h6 {
+  color: #004c73;
+  margin-right: 10px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.modal-details .heading ion-icon {
+  opacity: 0.4;
+  font-size: 24px;
+}
+
+.modal-details .heading ion-icon:hover {
+  opacity: 1;
+}
+
+.modal-details .claim-menu a:hover,
+.modal-details .claim-menu a.active {
+  text-decoration: none;
+  color: #004c73;
+  border-bottom: 1px solid #004c73;
+  cursor: pointer;
+}
+
+.modal-details .footer {
+  margin-top: 40px;
+  padding-left: 15px;
+}
+
+.modal-details .footer button:first-child {
+  margin-right: 10px;
+}
+
+input:disabled {
+  background-color: #f3f3f3;
+}
+select:disabled {
+  background-color: #f3f3f3;
+}

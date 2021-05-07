@@ -1,0 +1,24 @@
+.chart-card {
+  border: 1px solid #E5EDF1;
+  padding: 15px;
+  width: 470px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin: 10px;
+}
+
+.chart-card .heading {
+  font-size: 155px;
+  color: #8798AD;
+}
+
+.chart-card .label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  margin-bottom: 20px;
+}
+
+.chart-card .icon {
+  font-size: 18px;
+}

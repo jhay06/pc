@@ -1,0 +1,25 @@
+.customer-section {
+  width: 100%;
+  padding: 40px 20px 20px 20px;
+  overflow-y: scroll;
+}
+
+.error-notif {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.error-notif ion-icon {
+  font-size: 114px;
+  color: #004C73;
+}
+
+.error-notif h5 {
+  color: #004C73;
+  font-size: 50px
+}
+
+.error-notif p {
+  color: #B0BAC9;
+  margin-top: 20px;
+}

@@ -1,0 +1,26 @@
+.lists-container {
+  padding: 20px 0px 0px 5px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.table-container {
+  width: 100%;
+}
+
+.user-label th {
+  color: #b3cad5;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.pagination-tabs {
+  padding: 40px;
+  margin-left: 15px;
+}

@@ -1,0 +1,30 @@
+name: Test & Lint
+on:
+  push:
+jobs:
+  yarn-test:
+    name: Yarn Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+    - name: Install dependencies
+      run: yarn install
+    - name: Run the tests
+      run: yarn test
+  yarn-lint:
+    name: Yarn Lint
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+    - name: Install dependencies
+      run: yarn install
+    - name: Run ES Lint and Prettier
+      run: yarn lint

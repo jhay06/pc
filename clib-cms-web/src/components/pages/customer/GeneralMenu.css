@@ -1,0 +1,58 @@
+.general-menu.-show {
+  opacity: 1;
+}
+
+.general-menu {
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  z-index: 1000;
+  opacity: 1;
+}
+
+.general-menu:hover .menu {
+  color: #004c73;
+}
+
+.sub {
+  background: #f7f7f7;
+  padding-left: 15px;
+}
+
+.menu {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: #e5e5e5;
+}
+
+.items {
+  padding: 10px 0;
+  position: absolute;
+  top: -21px;
+  right: 48px;
+  border: 1px solid #eff2ff;
+  background: #ffffff;
+  color: #b0bac9;
+  width: 168px;
+  border-radius: 6px;
+}
+
+.items button {
+  margin: 4px 10px;
+}
+
+.items .delete {
+  color: #e02020;
+}
+
+.items p {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.items p:hover {
+  color: #004c73;
+}

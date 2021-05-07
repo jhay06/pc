@@ -1,0 +1,28 @@
+# Build stage
+FROM node:14.6.0-alpine3.11 as build
+
+RUN mkdir /clib-cms-admin
+WORKDIR /clib-cms-admin
+
+ENV PATH /clib-cms-admin/node_modules/.bin:$PATH
+COPY package.json ./
+COPY yarn.lock ./
+RUN yarn install --frozen-lockfile --ignore-engines --production
+COPY . ./
+
+RUN yarn run build
+
+# Web server stage
+FROM nginx:stable-alpine
+COPY --from=build /clib-cms-admin/build /usr/share/nginx/html
+COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+
+## To test this Dockerfile
+# $ docker image build -f Dockerfile.staging -t clib-cms-admin:build-test .
+## And spin it up into a container
+# $ docker container run -it --rm -p 1337:80 clib-cms-admin:build-test
+## Visit http://localhost:1337/ and test
+## Remove afterwards
+# $ docker container rm --force clib-cms-admin

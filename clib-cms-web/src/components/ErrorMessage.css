@@ -1,0 +1,14 @@
+.error-message {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.error-message ion-icon {
+  font-size: 82px;
+  color: #004C73;
+}
+
+.error-message h5 {
+  color: #B0BAC9;
+  margin-top: 14px;
+}

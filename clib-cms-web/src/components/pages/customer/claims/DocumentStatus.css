@@ -1,0 +1,33 @@
+.document-status label {
+  color: #b0bac9;
+  font-size: 12px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.document-status .status {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.document-status .tasks {
+  margin-top: 10px;
+}
+
+.document-status .tasks > button {
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.document-status .-incomplete {
+  color: #e02020;
+}
+
+.document-status .-complete {
+  color: #6dd400;
+}
+
+.document-status button {
+  margin-right: 10px;
+}

@@ -1,0 +1,30 @@
+.user-info {
+  padding: 40px 20px;
+}
+
+.user-info .avatar {
+  margin-right: 10px;
+  background: #ffffff;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 32px;
+  color: #99B7C7;
+}
+
+.user-info p {
+  margin-bottom: 0;
+}
+
+.user-info .title {
+ color: #004C73;
+ font-size: 14px;
+}
+
+.user-info .name {
+  color: #95B3C3;
+}

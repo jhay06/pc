@@ -1,0 +1,40 @@
+.sidebar-container {
+  position: fixed;
+  left: 0;
+  top: 66px;
+  bottom: 0;
+  width: 215px;
+  background: #F7F7F7;
+}
+
+.sidebar-container .action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 8px;
+}
+
+.sidebar-container .action ion-icon {
+  margin-right: 10px;
+  color: #004C73;
+}
+
+.sidebar-container p {
+  margin-bottom: 0;
+}
+
+.sidebar-container a {
+  color: #004C73;
+  text-decoration: none;
+}
+
+.sidebar-container a:hover {
+  color: #004C73;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background: #E5EDF1;
+  border-left: 2px solid #004C73;
+  padding: 20px 18px;
+}

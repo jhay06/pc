@@ -1,0 +1,39 @@
+.dashboard-container {
+  background: #ffffff;
+  overflow: hidden;
+  position: fixed;
+  top: 65px;
+  left: 215px;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.overview-container {
+  overflow: auto;
+  margin-top: 20px;
+}
+
+.graph-container,
+.total-container {
+  padding: 10px 0;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.graph-container::-webkit-scrollbar,
+.total-container::-webkit-scrollbar {
+  display: none;
+}
+
+.total-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.total-container a:hover {
+  text-decoration: none;
+}
+
+.overview-loader {
+  margin: 100px auto 0;
+}

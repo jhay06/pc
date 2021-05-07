@@ -1,0 +1,62 @@
+.customer-sidebar {
+  width: 470px;
+  padding: 23px 17px 10px 17px;
+  box-shadow: 0 10px 20px 0 rgba(46, 91, 255, 0.07);
+  overflow-y: auto;
+}
+
+.customer-sidebar .info {
+  border-bottom: 1px solid #e4e8f0;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.customer-sidebar ion-icon {
+  font-size: 87px;
+  margin-bottom: 10px;
+  color: #99b7c7;
+}
+
+.customer-sidebar h5 {
+  margin-bottom: 10px;
+  color: #004c73;
+}
+
+.customer-sidebar h5 span {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.customer-sidebar .id {
+  margin-bottom: 10px;
+  color: #8798ad;
+}
+
+.customer-sidebar button {
+  width: 100%;
+  font-size: 14px;
+}
+
+.actions .edit {
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.customer-sidebar label {
+  color: #b3cad5;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.customer-sidebar p {
+  color: #004c73;
+  margin-bottom: 10px;
+}
+
+.cust-sidebar-loading {
+  text-align: center;
+  margin-top: 40px;
+}

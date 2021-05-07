@@ -1,0 +1,57 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  color: #b3cad5;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group select {
+  border: 1px solid #e0e7ff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #456081;
+}
+
+.input-group ion-icon {
+  position: absolute;
+  right: 26px;
+  top: 32px;
+  color: #042b44;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.input-group .upload {
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: #cc0e2f;
+  margin-top: 8px;
+  font-size: 11px;
+}
+
+.error-input input {
+  border-color: #cc0e2f;
+}
+
+.MuiAutocomplete-inputRoot .MuiAutocomplete-input {
+  border: none;
+}
+
+.MuiAutocomplete-root .MuiOutlinedInput-notchedOutline {
+  border: 1px solid #e0e7ff;
+  color: #456081;
+}
+
+option:disabled {
+  color: #b9b9b9;
+}

@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://mno.cebuanalhuillier.com/NCVI/IMSAPI/1.0/InsuranceGateway
+    body:
+      encoding: UTF-8
+      string: '{"ApiKey":"873e38f22ada84d05a196406f33f4b0b","RequestType":38,"Request":"{\"ActionDone\":\"Update
+        Claims Details\",\"ClaimsReferenceNo\":\"202101-00005\",\"Claims\":{\"ClaimStatus\":\"Pending
+        Requirements\",\"AmountSettled\":\"10001.00\",\"Claimant\":\"Update Claimant\",\"ClaimantRelationship\":\"Sister\",\"ClaimantContactNo\":\"09999999\",\"ApprovedBy\":\"123456\",\"DateApproved\":\"01-01-2020\",\"DateClaimed\":\"01-01-2020\",\"PayoutBranch\":\"61040\",\"PayoutReferenceNumber\":\"123123131\",\"DateOfLoss\":\"01-01-2021\",\"Remarks\":\"test
+        update\"},\"EmployeeId\":\"000000\"}"}'
+    headers:
+      X-Api-Key:
+      - 2699b981-97f7-4fb3-a4c8-6ec24dc03e83
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJBcHBWZXJzaW9uIjoiMC4xLjAiLCJBcHBOYW1lIjoiQ0xJQiBDTVMiLCJBY2Nlc3NEYXRlIjoiMDEvMDcvMjAyMSAwNDoyNToxMSJ9.bsqyAkiiHqTuD2tzJaFCuAHtVgEq-rUc-VnWP5xNxPz1Dkilf4JzLfYVSYp90eEziIOMnbhIadQ0XcmLar6My1a6f9VXt1Q3evSWijcgfL2-yrRWA86jacb5fT832RCRK2m9amglPrRvXUYS9FKgsR949alX3CbVn6yMJF_L6fc
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 07 Jan 2021 04:25:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d189d8afc20070cff95ffcca510eaef2c1609993512; expires=Sat, 06-Feb-21
+        04:25:12 GMT; path=/; domain=.cebuanalhuillier.com; HttpOnly; SameSite=Lax;
+        Secure
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Cache-Control:
+      - private
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 077cb07ded0000dd3a11a23000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 60dae9dca8c5dd3a-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: "{\"ResponseDate\":\"\\/Date(1609993521526+0800)\\/\",\"Result\":\"{\\\"type\\\":\\\"Success\\\",\\\"message\\\":\\\"Claims
+        Details Updated.\\\",\\\"data\\\":\\\"202101-00005\\\",\\\"totalPage\\\":0}\"}<html>\r\n
+        \   <head>\r\n        <title>Session state has created a session id, but cannot
+        save it because the response was already flushed by the application.</title>\r\n
+        \       <style>\r\n         body {font-family:\"Verdana\";font-weight:normal;font-size:
+        .7em;color:black;} \r\n         p {font-family:\"Verdana\";font-weight:normal;color:black;margin-top:
+        -5px}\r\n         b {font-family:\"Verdana\";font-weight:bold;color:black;margin-top:
+        -5px}\r\n         H1 { font-family:\"Verdana\";font-weight:normal;font-size:18pt;color:red
+        }\r\n         H2 { font-family:\"Verdana\";font-weight:normal;font-size:14pt;color:maroon
+        }\r\n         pre {font-family:\"Lucida Console\";font-size: .9em}\r\n         .marker
+        {font-weight: bold; color: black;text-decoration: none;}\r\n         .version
+        {color: gray;}\r\n         .error {margin-bottom: 10px;}\r\n         .expandable
+        { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }\r\n
+        \       </style>\r\n    </head>\r\n\r\n    <body bgcolor=\"white\">\r\n\r\n
+        \           <span><H1>Server Error in '/' Application.<hr width=100% size=1
+        color=silver></H1>\r\n\r\n            <h2> <i>Session state has created a
+        session id, but cannot save it because the response was already flushed by
+        the application.</i> </h2></span>\r\n\r\n            <font face=\"Arial, Helvetica,
+        Geneva, SunSans-Regular, sans-serif \">\r\n\r\n            <b> Description:
+        </b>An unhandled exception occurred during the execution of the current web
+        request. Please review the stack trace for more information about the error
+        and where it originated in the code.\r\n\r\n            <br><br>\r\n\r\n            <b>
+        Exception Details: </b>System.Web.HttpException: Session state has created
+        a session id, but cannot save it because the response was already flushed
+        by the application.<br><br>\r\n\r\n            <b>Source Error:</b> <br><br>\r\n\r\n
+        \           <table width=100% bgcolor=\"#ffffcc\">\r\n               <tr>\r\n
+        \                 <td>\r\n                      <code>\r\n\r\nAn unhandled
+        exception was generated during the execution of the current web request. Information
+        regarding the origin and location of the exception can be identified using
+        the exception stack trace below.</code>\r\n\r\n                  </td>\r\n
+        \              </tr>\r\n            </table>\r\n\r\n            <br>\r\n\r\n
+        \           <b>Stack Trace:</b> <br><br>\r\n\r\n            <table width=100%
+        bgcolor=\"#ffffcc\">\r\n               <tr>\r\n                  <td>\r\n
+        \                     <code><pre>\r\n\r\n[HttpException (0x80004005): Session
+        state has created a session id, but cannot save it because the response was
+        already flushed by the application.]\r\n   System.Web.SessionState.SessionIDManager.SaveSessionID(HttpContext
+        context, String id, Boolean&amp; redirected, Boolean&amp; cookieAdded) +3691567\r\n
+        \  System.Web.SessionState.SessionStateModule.DelayedGetSessionId() +199\r\n
+        \  System.Web.SessionState.SessionStateModule.ReleaseStateGetSessionID() +25\r\n
+        \  System.Web.SessionState.SessionStateModule.OnReleaseState(Object source,
+        EventArgs eventArgs) +874\r\n   System.Web.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+        +80\r\n   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp;
+        completedSynchronously) +270\r\n</pre></code>\r\n\r\n                  </td>\r\n
+        \              </tr>\r\n            </table>\r\n\r\n            <br>\r\n\r\n
+        \           <hr width=100% size=1 color=silver>\r\n\r\n            <b>Version
+        Information:</b>&nbsp;Microsoft .NET Framework Version:4.0.30319; ASP.NET
+        Version:4.0.30319.272\r\n\r\n            </font>\r\n\r\n    </body>\r\n</html>\r\n<!--
+        \r\n[HttpException]: Session state has created a session id, but cannot save
+        it because the response was already flushed by the application.\r\n   at System.Web.SessionState.SessionIDManager.SaveSessionID(HttpContext
+        context, String id, Boolean& redirected, Boolean& cookieAdded)\r\n   at System.Web.SessionState.SessionStateModule.DelayedGetSessionId()\r\n
+        \  at System.Web.SessionState.SessionStateModule.ReleaseStateGetSessionID()\r\n
+        \  at System.Web.SessionState.SessionStateModule.OnReleaseState(Object source,
+        EventArgs eventArgs)\r\n   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()\r\n
+        \  at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&
+        completedSynchronously)\r\n--><!-- \r\nThis error page might contain sensitive
+        information because ASP.NET is configured to show verbose error messages using
+        &lt;customErrors mode=\"Off\"/&gt;. Consider using &lt;customErrors mode=\"On\"/&gt;
+        or &lt;customErrors mode=\"RemoteOnly\"/&gt; in production environments.-->"
+  recorded_at: Thu, 07 Jan 2021 04:25:21 GMT
+recorded_with: VCR 6.0.0

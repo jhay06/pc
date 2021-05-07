@@ -1,0 +1,22 @@
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+  border: 1px solid #E0E7FF !important;
+}
+
+.MuiCheckbox-colorPrimary.Mui-checked {
+  color: #007bff !important;
+}
+
+#button-tooltip .tool-tip {
+  padding: 25px;
+  text-align: left;
+}
+
+#button-tooltip .tool-tip label {
+  text-transform: uppercase;
+  color: #9E9E9E;
+}
+
+#button-tooltip .tool-tip p {
+  margin-bottom: 10px;
+}

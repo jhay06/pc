@@ -1,0 +1,12 @@
+.coc-item {
+  margin: 5px;
+}
+
+.coc-item .coc {
+  font-size: 14px;
+  margin-right: 5px;
+  color: #004C73;
+  background: #ECECEC;
+  padding: 5px 10px;
+  border-radius: 5px;
+}

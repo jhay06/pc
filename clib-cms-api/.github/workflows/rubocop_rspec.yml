@@ -1,0 +1,59 @@
+name: Run Rubocop & Rspec tests
+on:
+  pull_request:
+    branches:
+      - master
+      - develop
+  push:
+jobs:
+  rubocop-test:
+    name: Rubocop
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+      - name: Install Rubocop
+        run: gem install rubocop -v=0.91.0 # or refer to Gemfile.lock for version
+      - name: Check code
+        run: rubocop
+  rspec-test:
+    name: RSpec
+    needs: rubocop-test
+    runs-on: ubuntu-18.04
+    services:
+      mongodb:
+        image: mongo:3.6.17-xenial
+        ports:
+          - 27017:27017
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+      - name: Install Bundler
+        run: |
+          gem install bundler -v=2.1.4
+      - uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: bundle-use-ruby-${{ hashFiles('.ruby-version') }}-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            bundle-use-ruby-${{ hashFiles('.ruby-version') }}-
+      - name: Install gems
+        run: |
+          bundle config path vendor/bundle
+          bundle config set clean 'true'
+          bundle config set without 'production staging'
+          bundle install --jobs=8 --retry=2
+      - name: Run tests
+        env:
+          MONGODB_URI: mongodb://localhost:27017/test
+        run: bundle exec rspec --backtrace spec
+      - name: Upload coverage results
+        uses: actions/upload-artifact@master
+        if: always()
+        with:
+          name: coverage-report
+          path: coverage

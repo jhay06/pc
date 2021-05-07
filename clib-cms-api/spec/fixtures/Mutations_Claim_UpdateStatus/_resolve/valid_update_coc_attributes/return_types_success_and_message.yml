@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://mno.cebuanalhuillier.com/NCVI/IMSAPI/1.0/InsuranceGateway
+    body:
+      encoding: UTF-8
+      string: '{"ApiKey":"873e38f22ada84d05a196406f33f4b0b","RequestType":38,"Request":"{\"ActionDone\":\"Update
+        Claims Status\",\"ClaimsReferenceNo\":\"202012-00001\",\"Claims\":{\"ClaimStatus\":\"Reported\"},\"EmployeeId\":\"000000\"}"}'
+    headers:
+      X-Api-Key:
+      - 2699b981-97f7-4fb3-a4c8-6ec24dc03e83
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJBcHBWZXJzaW9uIjoiMC4xLjAiLCJBcHBOYW1lIjoiQ0xJQiBDTVMiLCJBY2Nlc3NEYXRlIjoiMDEvMDUvMjAyMSAwODowMTo1MyJ9.b2A9CRTBOkTN4Pofm7li4-_pIAewENZIw7DsVYBxoUfuz0sJOKCy1VmlXZUU5W0JHD75BSyiWyMQwTQ2p3-AMEBtaxoPmkZOuYcWlnMJ9pYBL4l98fkGREuxom2QwUYVBLeVR4EAGOqePmYjLodftvdQXwQmTs9bOmRdJZHj4nM
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jan 2021 08:01:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ASP.NET_SessionId=z3hrqrd2rys5rdnn4q1xtmfu; path=/; HttpOnly
+      - __cfduid=db49b7efb9c221945270a90da1c0893691609833714; expires=Thu, 04-Feb-21
+        08:01:54 GMT; path=/; domain=.cebuanalhuillier.com; HttpOnly; SameSite=Lax;
+        Secure
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Cache-Control:
+      - private
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 07732a2c340000dccadb2c2000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 60cbac8d187ddcca-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ResponseDate":"\/Date(1609833719992+0800)\/","Result":"{\"type\":\"Success\",\"message\":\"Claims
+        Status Updated.\",\"data\":\"202012-00001\",\"totalPage\":0}"}'
+  recorded_at: Tue, 05 Jan 2021 08:01:59 GMT
+recorded_with: VCR 6.0.0

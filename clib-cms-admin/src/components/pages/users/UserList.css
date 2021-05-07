@@ -1,0 +1,32 @@
+table .user-list {
+  border-top: 1px solid #F4F6FF;
+}
+
+table .user-list:hover {
+  background: #f5f5f5;
+}
+
+.user-list td {
+  color: #004C73;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.user-list td a {
+  color: #004C73;
+  text-decoration: none;
+}
+
+.user-list .fullname {
+  font-weight: bold;
+}
+
+.user-list .fullname {
+  white-space: nowrap;
+}
+
+.user-list button {
+  background: #f5f5f5;
+  border: none;
+  color: #004C73;
+}
